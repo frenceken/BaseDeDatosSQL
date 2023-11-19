@@ -1,7 +1,7 @@
 """Relacionar Tablas primera parte"""
 import sqlite3
 
-ruta = "C:/Users/Frenzel1/Documents/BASE DE DATOS/SalaDeVideos.db"
+ruta = "C:/Users/Fzel1/Documents/BASEDEDATOS/SalaDeVideos.db"
 conectar = sqlite3.connect(ruta)
 
 cursor = conectar.cursor()
@@ -24,7 +24,7 @@ conectar.commit()
 
 conectar.close()
 
-ruta = "C:/Users/Frenzel1/Documents/BASE DE DATOS/SalaDeVideos.db"
+ruta = "C:/Users/Fzel1/Documents/BASEDEDATOS/SalaDeVideos.db"
 
 conectar = sqlite3.connect(ruta)
 cursor = conectar.cursor()

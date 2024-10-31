@@ -17,9 +17,10 @@ cursor.execute("""CREATE TABLE IF NOT EXISTS SalaDeVideos(
 )""")
 conectar.commit()
 
-cursor.execute("""INSERT INTO SalaDeVideos(NOMBRE, GENERO, DURACION, AÑO, 
+info = """INSERT INTO SalaDeVideos(NOMBRE, GENERO, DURACION, AÑO, 
 PROTAGONISTAS, PAIS) VALUES("Passengers", "Ciencia Ficcion/Romance", "1h 56m", 
-2016, "Jennifer Lawrence/Chris Pratt/Michael Sheen", "EEUU")""")
+2016, "Jennifer Lawrence/Chris Pratt/Michael Sheen", "EEUU")"""
+cursor.execute(info)
 conectar.commit()
 
 conectar.close()
@@ -29,9 +30,10 @@ ruta = "C:/Users/Fzel1/Documents/BASEDEDATOS/SalaDeVideos.db"
 conectar = sqlite3.connect(ruta)
 cursor = conectar.cursor()
 
-cursor.execute("""INSERT INTO SalaDeVideos(NOMBRE, GENERO, DURACION, AÑO,
+info2 = """INSERT INTO SalaDeVideos(NOMBRE, GENERO, DURACION, AÑO,
 PROTAGONISTAS, PAIS) VALUES("Interstellar", "Ciencia Ficcion/Drama", "2h 49m",
-2014, "Matthew McConaughey/Jessica Chastain/Anne Hathaway", "EEUU")""")
+2014, "Matthew McConaughey/Jessica Chastain/Anne Hathaway", "EEUU")"""
+cursor.execute(info2)
 conectar.commit()
 
 cursor.execute("SELECT * FROM SalaDeVideos")
